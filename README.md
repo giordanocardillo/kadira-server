@@ -18,3 +18,10 @@ The script will install three services and MongoDB 3.4:
 3. kadira-engine (listens on port 11011)
 
 The default administrator user is `kadira@kadira.com` with password `kadira`
+
+
+## Troubleshooting
+
+Q. The UI is stuck in "loading..." state (Red loading labesl everywhere)?
+A. `sudo systemctl restart kadira-ui`
+
