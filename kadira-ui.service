@@ -2,8 +2,8 @@
 Description=kadira-ui
 [Service]
 Type=simple
-User=kadira
-WorkingDirectory=/home/kadira/kadira-ui
+User=ubuntu
+WorkingDirectory=/home/ubuntu/kadira-ui
 ExecStart=/bin/bash -c "source ../init-shell.sh; ./run.sh"
 Restart=on-abort
 [Install]
