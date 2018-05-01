@@ -17,4 +17,4 @@ The script will install three services and MongoDB 3.4:
 2. kadira-rma
 3. kadira-engine (listens on port 11011)
 
-The default adiminsitration user is `kadira@kadira.com` with password `kadira`
+The default administrator user is `kadira@kadira.com` with password `kadira`

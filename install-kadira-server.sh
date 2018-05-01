@@ -8,8 +8,6 @@ sudo systemctl enable mongod
 sudo systemctl start mongod
 echo -e 'replication:\n  replSetName: "rs0"' | sudo tee -a /etc/mongod.conf
 sudo systemctl restart mongod
-mongo admin --eval 'rs.initiate({_id: "rs0", members:[{_id : 0, host : "localhost:27017"},]})'
-mongo admin --eval 'rs.slaveOk()'
 cd kadira-rma
 npm i --production
 cd ../kadira-engine
@@ -19,9 +17,11 @@ meteor npm r --save bcrypt
 meteor npm i --save bcrypt
 meteor npm i
 cd ..
-sudo cp kadira-rma.service /usr/systemd/system
-sudo cp kadira-ui.service /usr/systemd/system
-sudo cp kadira-engine.service /usr/systemd/system
+mongo admin --eval 'rs.initiate({_id: "rs0", members:[{_id : 0, host : "localhost:27017"},]})'
+mongo admin --eval 'rs.slaveOk()'
+sudo cp kadira-rma.service /usr/systemd/system/kadira-rma.service
+sudo cp kadira-ui.service /usr/systemd/system/kadira-ui.service
+sudo cp kadira-engine.service /usr/systemd/system/kadira-engine.service
 sudo systemctl daemon-reload
 sudo systemctl enable kadira-rma
 sudo systemctl enable kadira-ui
