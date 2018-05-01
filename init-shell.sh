@@ -1,7 +1,7 @@
 # DB settings
-export APP_MONGO_URL="mongodb://app:password@candidate.53.mongolayer.com:10478,candidate.54.mongolayer.com:10216/tkadira-app?replicaSet=set-56175e62147ca745d8000761"
-export APP_MONGO_OPLOG_URL="mongodb://oplog:password@candidate.53.mongolayer.com:10478,candidate.54.mongolayer.com:10216/local?authSource=tkadira-app&replicaSet=set-56175e62147ca745d8000761"
-export DATA_MONGO_URL="mongodb://app:password@candidate.53.mongolayer.com:10478,candidate.54.mongolayer.com:10216/tkadira-data?replicaSet=set-56175e62147ca745d8000761"
+export APP_MONGO_URL="mongodb://localhost/kadiraApps"
+export APP_MONGO_OPLOG_URL="mongodb://localhost/local"
+export DATA_MONGO_URL="mongodb://localhost/kadiraData"
 export MAIL_URL="smtp://postmaster%40kadira.io:9jx4fqhdfbg5@smtp.mailgun.org:587"
 
 # Engine settings
