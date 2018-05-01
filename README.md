@@ -11,3 +11,10 @@ This repo aims to make a 'ready-to-deploy' kadira server on an EC2 Ubuntu 16.04 
 3. `git clone https://github.com/giordanocardillo/kadira-server`
 4. `cd kadira-server`
 5. `./install-kadira-server.sh`
+
+The script will install three services and MongoDB 3.4:
+1. kadira-ui (listens on port 4000)
+2. kadira-rma
+3. kadira-engine (listens on port 11011)
+
+The default adiminsitration user is `kadira@kadira.com` with password `kadira`
