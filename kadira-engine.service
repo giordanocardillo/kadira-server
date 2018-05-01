@@ -3,7 +3,7 @@ Description=kadira-engine
 [Service]
 Type=simple
 User=ubuntu
-WorkingDirectory=/home/ubuntu/kadira-engine
+WorkingDirectory=/home/ubuntu/kadira-server/kadira-engine
 ExecStart=/bin/bash -c "source ../init-shell.sh; ./run.sh"
 Restart=on-abort
 [Install]

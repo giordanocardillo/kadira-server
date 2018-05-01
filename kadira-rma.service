@@ -3,7 +3,7 @@ Description=kadira-rma
 [Service]
 Type=simple
 User=ubuntu
-WorkingDirectory=/home/ubuntu/kadira-rma
+WorkingDirectory=/home/ubuntu/kadira-server/kadira-rma
 ExecStart=/bin/bash -c "source ../init-shell.sh; ./run.sh"
 Restart=on-abort
 [Install]
