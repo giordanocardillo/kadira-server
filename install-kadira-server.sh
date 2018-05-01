@@ -14,8 +14,7 @@ echo -e 'replication:\n  replSetName: "rs0"' | sudo tee -a /etc/mongod.conf
 sudo systemctl restart mongod
 mongo admin --eval 'rs.initiate({_id: "rs0", members:[{_id : 0, host : "localhost:27017"},]})'
 mongo admin --eval 'rs.slaveOk()'
-git clone https://github.com/giordanocardillo/kadira-server
-cd kadira-server/kadira-rma
+cd kadira-rma
 npm i --production
 cd ../kadira-engine
 npm i --production
