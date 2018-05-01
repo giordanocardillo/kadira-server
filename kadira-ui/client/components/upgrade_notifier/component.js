@@ -17,12 +17,12 @@ var CONTENTS = {
   },
   "remoteProfiling": {
     "title": "Upgrade your plan",
-    "msg": "Profile a production app remotely and Share profiles you've taken <br/><a target=\"_blank\" href=\"https://kadira.io/academy/meteor-cpu-profiling/#taking-a-cpu-profile---for-a-production-app-remotely\">Learn More</a>",
+    "msg": "Profile a production app remotely and Share profiles you've taken <br/><a target=\"_blank\" href=\"https://github.com/kadirahq/kadira.io/blob/master/.pages/academy/2010-09-01-meteor-cpu-profiling.md#taking-a-cpu-profile---for-a-production-app-remotely\">Learn More</a>",
     "img": "profiler.png"
   },
   "observerInfo": {
     "title": "Observer Info",
-    "msg": "Upgrade your plan to view Observer Info <br/><a target=\"_blank\" href=\"https://kadira.io/academy/know-your-observers\">See how useful it is</a>",
+    "msg": "Upgrade your plan to view Observer Info <br/><a target=\"_blank\" href=\"https://galaxy-guide.meteor.com/apm-know-your-observers.html\">See how useful it is</a>",
     "img": "observers.gif"
   },
   "range": {
