@@ -13,9 +13,9 @@ npm i --production
 cd ../kadira-engine
 npm i --production
 cd ../kadira-ui
+meteor npm i
 meteor npm r --save bcrypt
 meteor npm i --save bcrypt
-meteor npm i
 cd ..
 mongo admin --eval 'rs.initiate({_id: "rs0", members:[{_id : 0, host : "localhost:27017"},]})'
 mongo admin --eval 'rs.slaveOk()'
