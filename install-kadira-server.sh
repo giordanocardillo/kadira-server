@@ -19,6 +19,7 @@ meteor npm i --save bcrypt
 cd ..
 mongo admin --eval 'rs.initiate({_id: "rs0", members:[{_id : 0, host : "localhost:27017"}]})'
 mongo admin --eval 'rs.slaveOk()'
+sleep 2 # Wait for replica set to come alive
 mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'1min',provider:'methods',shard:'one'}})"
 mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'1min',provider:'errors',shard:'one'}})"
 mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'1min',provider:'pubsub',shard:'one'}})"
