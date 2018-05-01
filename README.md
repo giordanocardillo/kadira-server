@@ -22,7 +22,7 @@ The default administrator user is `kadira@kadira.com` with password `kadira`
 
 ## Troubleshooting
 
-**Q.** The UI is stuck in "loading..." state (Red loading labesl everywhere)
+**Q.** The UI is stuck in "loading..." state (Red loading labels everywhere)
 
 **A.** `sudo systemctl restart kadira-ui`
 
