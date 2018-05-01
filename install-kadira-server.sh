@@ -19,6 +19,18 @@ meteor npm i
 cd ..
 mongo admin --eval 'rs.initiate({_id: "rs0", members:[{_id : 0, host : "localhost:27017"},]})'
 mongo admin --eval 'rs.slaveOk()'
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'1min',provider:'methods',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'1min',provider:'errors',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'1min',provider:'pubsub',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'1min',provider:'system',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'3hour',provider:'methods',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'3hour',provider:'errors',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'3hour',provider:'pubsub',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'3hour',provider:'system',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'30min',provider:'methods',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'30min',provider:'errors',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'30min',provider:'pubsub',shard:'one'}})"
+mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'30min',provider:'system',shard:'one'}})"
 sudo cp kadira-rma.service /lib/systemd/system/kadira-rma.service
 sudo cp kadira-ui.service /lib/systemd/system/kadira-ui.service
 sudo cp kadira-engine.service /lib/systemd/system/kadira-engine.service
