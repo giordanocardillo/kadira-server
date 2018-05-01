@@ -26,3 +26,6 @@ The default administrator user is `kadira@kadira.com` with password `kadira`
 
 **A.** Just restart *kadira-ui* service, sometimes it throws errors at first start: `sudo systemctl restart kadira-ui`
 
+## Installation demo
+
+[![Installation demo](https://img.youtube.com/vi/SgXXthK-0x4/0.jpg)](https://www.youtube.com/watch?v=SgXXthK-0x4)
