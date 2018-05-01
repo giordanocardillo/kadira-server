@@ -17,7 +17,7 @@ meteor npm i
 meteor npm r --save bcrypt
 meteor npm i --save bcrypt
 cd ..
-mongo admin --eval 'rs.initiate({_id: "rs0", members:[{_id : 0, host : "localhost:27017"},]})'
+mongo admin --eval 'rs.initiate({_id: "rs0", members:[{_id : 0, host : "localhost:27017"}]})'
 mongo admin --eval 'rs.slaveOk()'
 mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'1min',provider:'methods',shard:'one'}})"
 mongo kadiraData --eval "db.mapReduceProfileConfig.insert({lastTime: new Date(), _id:{profile:'1min',provider:'errors',shard:'one'}})"

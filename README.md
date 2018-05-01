@@ -24,5 +24,5 @@ The default administrator user is `kadira@kadira.com` with password `kadira`
 
 **Q.** The UI is stuck in "loading..." state (Red loading labels everywhere)
 
-**A.** `sudo systemctl restart kadira-ui`
+**A.** Just restart *kadira-ui* service, sometimes it throws errors at first start: `sudo systemctl restart kadira-ui`
 
